@@ -1,0 +1,38 @@
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">Seller Panel</h2>
+
+    <ul class="menu">
+      <li><a routerLink="/seller/dashboard">Dashboard</a></li>
+      <li><a routerLink="/seller/products">Products</a></li>
+      <li><a routerLink="/seller/orders">Orders</a></li>
+      <li><a routerLink="/seller/profile">Profile</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Top Navbar -->
+    <header class="navbar">
+      <div class="dashboard-header">
+  <h2>Seller Dashboard</h2>
+  <p>Manage your store, products and orders efficiently.</p>
+</div>
+
+
+      <button (click)="logout()" class="logout-btn">
+        Logout
+      </button>
+    </header>
+
+    <!-- Dynamic Content -->
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+</div>

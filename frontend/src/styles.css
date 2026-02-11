@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Remove link underline globally */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove list styling globally */
+ul {
+  list-style: none;
+}

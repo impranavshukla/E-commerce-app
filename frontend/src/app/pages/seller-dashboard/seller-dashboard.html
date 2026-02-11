@@ -1,0 +1,83 @@
+<div class="dashboard">
+
+  <!-- Welcome Section -->
+  <div class="welcome-section">
+    <h2>Welcome Back, {{currentSeller.name}} 👋</h2>
+    <p>Here’s a quick overview of your store performance.</p>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="stats-container">
+
+    <div class="card">
+      <h3>Total Products</h3>
+      <p class="number">24</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Orders</h3>
+      <p class="number">128</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Revenue</h3>
+      <p class="number">₹45,000</p>
+    </div>
+
+    <div class="card">
+      <h3>Pending Orders</h3>
+      <p class="number">8</p>
+    </div>
+
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="actions">
+    <button class="add-product-btn">+ Add New Product</button>
+  </div>
+
+  <!-- Recent Orders -->
+  <div class="orders-section">
+    <h3>Recent Orders</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer</th>
+          <th>Product</th>
+          <th>Status</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>#1021</td>
+          <td>Amit</td>
+          <td>Laptop</td>
+          <td class="delivered">Delivered</td>
+          <td>₹50,000</td>
+        </tr>
+
+        <tr>
+          <td>#1022</td>
+          <td>Rahul</td>
+          <td>Mobile</td>
+          <td class="pending">Pending</td>
+          <td>₹18,000</td>
+        </tr>
+
+        <tr>
+          <td>#1023</td>
+          <td>Neha</td>
+          <td>Headphones</td>
+          <td class="cancelled">Cancelled</td>
+          <td>₹2,000</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</div>

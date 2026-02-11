@@ -1,0 +1,47 @@
+<!-- Navbar Component -->
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <span class="logo-icon">🛍️</span>
+      <span class="logo-text">ShopEase</span>
+    </div>
+
+    <!-- Navigation Links -->
+   <ul class="nav-links">
+  <li><a routerLink="/home">Home</a></li>
+  <li><a routerLink="/shop">Shop</a></li>
+  <li><a routerLink="/categories">Categories</a></li>
+  <li><a routerLink="/deals">Deals</a></li>
+  <!-- <li><a routerLink="/seller">Seller</a></li> -->
+  <li><a routerLink="/contact">Contact</a></li>
+</ul>
+
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products...">
+      <button>🔍</button>
+    </div>
+
+    <!-- Icons -->
+    <div class="nav-icons">
+
+  <div class="icon">❤️</div>
+  <div class="icon">🛒</div>
+
+  <!-- Show user name -->
+  <div class="user-info">
+    👤 {{ currentUser?.name }}
+  </div>
+
+  <button class="logout-btn" (click)="logout()">
+    Logout
+  </button>
+
+</div>
+
+
+  </div>
+</nav>
