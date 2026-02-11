@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 50000
+    },
+    {
+      "id": 2,
+      "name": "Mobile",
+      "price": 20000
+    }
+  ],
+  "users": [
+    {
+      "id": "9dfb",
+      "name": "Pranav Shukla",
+      "email": "pranav@test.com",
+      "role": "user",
+      "password": "1234"
+    },
+    {
+      "id": "e26f",
+      "name": "Raj Shamani",
+      "email": "raj@gmail.com",
+      "role": "seller",
+      "password": "1234567890"
+    },
+    {
+      "id": "0ad4",
+      "name": "Preeti Singh",
+      "email": "preeti@gmail.com",
+      "role": "user",
+      "password": "1234567890"
+    },
+    {
+      "id": "afec",
+      "name": "Jaggu Bandar",
+      "email": "jaggu@gmail.com",
+      "role": "seller",
+      "password": "1234567890"
+    }
+  ]
+}
