@@ -1,0 +1,66 @@
+<div class="productsPage">
+
+    <!-- PAGE HEADER -->
+    <div class="pageHeader">
+        <div>
+            <h2>Products</h2>
+            <p>Manage your listed products efficiently.</p>
+        </div>
+
+        <button class="addBtn"> <a routerLink="addProduct"> + Add New Product</a> </button>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="searchBar">
+        <input type="text" placeholder="Search products...">
+    </div>
+
+    <!-- PRODUCTS TABLE -->
+    <div class="tableContainer">
+
+        <h3>All Products</h3>
+
+        <div class="tableHeader">
+            <span>Product</span>
+            <span>Category</span>
+            <span>Price</span>
+            <span>Stock</span>
+            <span>Status</span>
+            <span>Actions</span>
+        </div>
+
+        <!-- ROW 1 -->
+        <div class="tableRow">
+            <div class="productInfo">
+                <img src="https://via.placeholder.com/60">
+                <span>Smart Watch</span>
+            </div>
+            <span>Electronics</span>
+            <span>₹2,499</span>
+            <span>45</span>
+            <span class="status active">Active</span>
+            <div class="actions">
+                <button class="editBtn">Edit</button>
+                <button class="deleteBtn">Delete</button>
+            </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="tableRow">
+            <div class="productInfo">
+                <img src="https://via.placeholder.com/60">
+                <span>Running Shoes</span>
+            </div>
+            <span>Fashion</span>
+            <span>₹3,299</span>
+            <span>0</span>
+            <span class="status out">Out of Stock</span>
+            <div class="actions">
+                <button class="editBtn">Edit</button>
+                <button class="deleteBtn">Delete</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

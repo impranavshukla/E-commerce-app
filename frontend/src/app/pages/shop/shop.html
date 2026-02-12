@@ -1,0 +1,85 @@
+<div class="mainContainer">
+
+    <!-- HERO SECTION -->
+    <div class="heroSection">
+        <div class="heroContent">
+            <h1>Explore Our Collection</h1>
+            <p>Find premium products at the best prices</p>
+        </div>
+    </div>
+
+    <!-- STICKY SEARCH BOX -->
+    <div class="searchBox">
+        <input type="text" placeholder="Search products, brands and more...">
+        <button>Search</button>
+    </div>
+
+    <!-- PRODUCTS SECTION -->
+    <div class="products">
+
+        <!-- STICKY FILTER BOX -->
+        <!-- <div class="filterBox">
+            <h3>Filters</h3>
+            <div class="filterGroup">
+                <h4>Category</h4>
+                <label><input type="checkbox"> Electronics</label>
+                <label><input type="checkbox"> Fashion</label>
+                <label><input type="checkbox"> Home</label>
+                <label><input type="checkbox"> Beauty</label>
+            </div>
+            <button class="applyBtn">Apply Filters</button>
+        </div> -->
+
+        <!-- PRODUCT LIST -->
+        <div class="productList">
+
+            @for(items of products();track items.id){
+            <div class="productCard">
+
+                <!-- Product Image -->
+                <div class="imageContainer">
+                    <img [src]="items.thumbnail" alt="{{ items.title }}">
+                </div>
+
+                <!-- Product Info -->
+                <div class="productInfo">
+
+                    <h3 class="title">{{ items.title }}</h3>
+
+                    <p class="brand">
+                        {{ items.brand }} • {{ items.category }}
+                    </p>
+
+                    <p class="price">
+                        ₹ {{ items.price }}
+                    </p>
+
+                    <p class="stock" [ngClass]="items.stock > 0 ? 'inStock' : 'outStock'">
+                        {{ items.stock > 0 ? 'In Stock' : 'Out of Stock' }}
+                    </p>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="cardButtons">
+                    <button class="cartBtn" [disabled]="items.stock === 0">
+                        Add to Cart
+                    </button>
+
+                    <button class="wishlistBtn">
+                        ❤️ Wishlist
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+            }
+
+        </div>
+
+    </div>
+
+</div>

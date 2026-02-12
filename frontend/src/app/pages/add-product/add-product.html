@@ -1,0 +1,67 @@
+<div class="addProductContainer">
+
+  <h2>Add New Product</h2>
+
+  <form [formGroup]="productData" class="productForm">
+
+    <div class="formGroup">
+      <label>Product Title</label>
+      <input formControlName="title" type="text" placeholder="Enter product title">
+    </div>
+
+    <div class="formGroup">
+      <label>Description</label>
+      <textarea formControlName="description" rows="3" placeholder="Enter product description"></textarea>
+    </div>
+
+    <div class="formRow">
+
+      <div class="formGroup">
+        <label>Price (₹)</label>
+        <input formControlName="price" type="number" placeholder="Enter price">
+      </div>
+
+      <div class="formGroup">
+        <label>Stock</label>
+        <input formControlName="stock" type="number" placeholder="Available quantity">
+      </div>
+
+    </div>
+
+    <div class="formRow">
+
+      <div class="formGroup">
+        <label>Brand</label>
+        <input formControlName="brand" type="text" placeholder="Enter brand name">
+      </div>
+
+      <div class="formGroup">
+        <label>Category</label>
+        <select formControlName="category">
+          <option value="">Select category</option>
+          <option value="laptops">Laptops</option>
+          <option value="mobiles">Mobiles</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="formGroup">
+      <label>Thumbnail URL</label>
+      <input formControlName="thumbnail" type="text" placeholder="Paste image URL">
+    </div>
+
+    <div class="checkboxGroup">
+      <input formControlName="isFeatured" type="checkbox">
+      <label>Mark as Featured</label>
+    </div>
+
+    <button (click)="onSubmit()" type="submit" class="submitBtn">
+      Add Product
+    </button>
+
+  </form>
+
+</div>

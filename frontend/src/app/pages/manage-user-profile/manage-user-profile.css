@@ -1,0 +1,75 @@
+/* Container */
+.dashboard-container {
+  padding: 50px 10%;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: linear-gradient(135deg, #ff4d4d, #ff9966);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.welcome-card h2 {
+  margin-bottom: 10px;
+}
+
+/* Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.dashboard-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Icon */
+.card-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.dashboard-card h3 {
+  margin-bottom: 8px;
+}
+
+/* Description */
+.dashboard-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.dashboard-card button {
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-card button:hover {
+  background: #e60000;
+}

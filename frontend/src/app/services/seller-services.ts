@@ -10,6 +10,9 @@ export class SellerServices {
   postUser(data:any){
     return this.http.post('http://localhost:3001/users', data);
   }
+  addProduct(data:any){
+    return this.http.post('http://localhost:3001/products', data);
+  }
 
   loginUser(email: string, password: string) {
   return this.http.get<any[]>(

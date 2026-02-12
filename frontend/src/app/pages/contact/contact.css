@@ -1,0 +1,63 @@
+.contactPage {
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* HERO */
+.contactHero {
+    height: 40vh;
+    background: linear-gradient(135deg, #ff4d4d, #ff9966);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contactHero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contactHero p {
+    font-size: 18px;
+}
+
+/* CARDS SECTION */
+.contactCards {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.contactCard {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.contactCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contactCard h3 {
+    margin-bottom: 10px;
+}
+
+.contactCard p {
+    font-size: 14px;
+    color: #555;
+}

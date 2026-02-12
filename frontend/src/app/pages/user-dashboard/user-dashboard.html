@@ -1,1 +1,88 @@
-<p>user-dashboard works!</p>
+<div class="home-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ShopEase</h1>
+            <p>Discover amazing products at the best prices</p>
+            <button class="primary-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="section">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="product-grid">
+
+            @for (items of products(); track items.id) {
+
+            <div class="product-card">
+
+                <!-- Wishlist Icon -->
+                
+
+                <!-- Product Image -->
+                <div class="image-box">
+                    <img [src]="items.thumbnail" [alt]="items.title">
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h3>{{ items.title }}</h3>
+
+                    <p class="brand">
+                        {{ items.brand }} • {{ items.category }}
+                    </p>
+
+                    <p class="price">
+                        ₹ {{ items.price }}
+                    </p>
+
+                    <p class="stock" >
+                        {{ items.stock > 0 ? 'In Stock' : 'Out of Stock' }}
+                    </p>
+                </div>
+
+                <!-- Buttons -->
+                <div class="card-buttons">
+                    <button class="cart-btn" [disabled]="items.stock === 0">
+                        Add to Cart
+                    </button>
+
+                    <button class="wishlist-btn">
+                        Add to Wishlist
+                    </button>
+                </div>
+
+            </div>
+
+            }
+
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section">
+        <h2 class="section-title">Shop by Category</h2>
+
+        <div class="category-grid">
+            <div class="category-card">Electronics</div>
+            <div class="category-card">Fashion</div>
+            <div class="category-card">Home & Living</div>
+            <div class="category-card">Beauty</div>
+        </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <section class="offer-section">
+        <div class="offer-content">
+            <h2>Special Offer</h2>
+            <p>Get up to 50% OFF on selected items</p>
+            <button class="primary-btn">Explore Deals</button>
+        </div>
+    </section>
+
+</div>

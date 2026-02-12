@@ -1,0 +1,267 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.mainContainer {
+  background: #f5f7fa;
+}
+
+/* ================= HERO SECTION ================= */
+.heroSection {
+  height: 45vh;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.heroContent h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.heroContent p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ================= SEARCH BOX ================= */
+.searchBox {
+  position: sticky;
+  top: 70px;
+  background: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.searchBox input {
+  width: 400px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.searchBox input:focus {
+  border-color: #2563eb;
+}
+
+.searchBox button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.searchBox button:hover {
+  background: #1e40af;
+}
+
+/* ================= PRODUCTS SECTION ================= */
+.products {
+  display: flex;
+  gap: 30px;
+  padding: 50px 8%;
+  align-items: flex-start;
+}
+
+/* ================= FILTER BOX ================= */
+.filterBox {
+  width: 260px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 150px;
+  height: fit-content;
+}
+
+.filterBox h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.filterGroup {
+  margin-bottom: 20px;
+}
+
+.filterGroup h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.filterGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.applyBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.applyBtn:hover {
+  background: #1e40af;
+}
+
+/* ================= PRODUCT GRID ================= */
+.productList {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* ================= PRODUCT CARD ================= */
+.productCard {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE */
+.imageContainer {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* PRODUCT INFO */
+.productInfo {
+  flex: 1;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.brand {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #f59e0b;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.stock {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.inStock {
+  color: #16a34a;
+}
+
+.outStock {
+  color: #dc2626;
+}
+
+/* BUTTONS */
+.cardButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.cartBtn {
+  flex: 1;
+  padding: 9px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cartBtn:hover {
+  background: #1e40af;
+}
+
+.cartBtn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.wishlistBtn {
+  flex: 1;
+  padding: 9px;
+  background: #f43f5e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wishlistBtn:hover {
+  background: #e11d48;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .products {
+    flex-direction: column;
+  }
+
+  .filterBox {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .searchBox input {
+    width: 250px;
+  }
+}

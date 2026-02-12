@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { Footer } from '../../components/footer/footer';
 
 @Component({
   selector: 'app-user-layout',
-  imports: [],
+  imports: [RouterOutlet, RouterLinkWithHref,Footer],
   templateUrl: './user-layout.html',
   styleUrl: './user-layout.css',
 })

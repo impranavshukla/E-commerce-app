@@ -1,16 +1,4 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Laptop",
-      "price": 50000
-    },
-    {
-      "id": 2,
-      "name": "Mobile",
-      "price": 20000
-    }
-  ],
   "users": [
     {
       "id": "9dfb",
@@ -39,6 +27,125 @@
       "email": "jaggu@gmail.com",
       "role": "seller",
       "password": "1234567890"
+    },
+    {
+      "id": "4f30",
+      "name": "Pranav Shukla",
+      "email": "admin@gmail.com",
+      "role": "seller",
+      "password": "1234567890"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Apple MacBook Air M1",
+      "description": "13-inch Retina display, 8GB RAM, 256GB SSD",
+      "price": 89999,
+      "brand": "Apple",
+      "category": "laptops",
+      "stock": 15,
+      "thumbnail": "https://picsum.photos/300?1",
+      "isFeatured": true
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S23",
+      "description": "8GB RAM, 256GB Storage, 50MP Camera",
+      "price": 74999,
+      "brand": "Samsung",
+      "category": "mobiles",
+      "stock": 0,
+      "thumbnail": "https://picsum.photos/300?2",
+      "isFeatured": true
+    },
+    {
+      "id": 3,
+      "title": "Sony WH-1000XM5 Headphones",
+      "description": "Noise Cancelling, Wireless, 30hr Battery",
+      "price": 29999,
+      "brand": "Sony",
+      "category": "electronics",
+      "stock": 12,
+      "thumbnail": "https://picsum.photos/300?3",
+      "isFeatured": false
+    },
+    {
+      "id": 4,
+      "title": "Nike Air Max Sneakers",
+      "description": "Comfortable running shoes for daily wear",
+      "price": 7999,
+      "brand": "Nike",
+      "category": "fashion",
+      "stock": 30,
+      "thumbnail": "https://picsum.photos/300?4",
+      "isFeatured": false
+    },
+    {
+      "id": 5,
+      "title": "LG 55-inch Smart TV",
+      "description": "4K UHD, WebOS, Dolby Vision",
+      "price": 54999,
+      "brand": "LG",
+      "category": "electronics",
+      "stock": 10,
+      "thumbnail": "https://picsum.photos/300?5",
+      "isFeatured": true
+    },
+    {
+      "id": 6,
+      "title": "HP Pavilion Gaming Laptop",
+      "description": "Ryzen 5, 16GB RAM, 512GB SSD",
+      "price": 68999,
+      "brand": "HP",
+      "category": "laptops",
+      "stock": 8,
+      "thumbnail": "https://picsum.photos/300?6",
+      "isFeatured": false
+    },
+    {
+      "id": 7,
+      "title": "Boat Rockerz 450 Headphones",
+      "description": "Bluetooth Wireless Headphones",
+      "price": 1499,
+      "brand": "Boat",
+      "category": "electronics",
+      "stock": 50,
+      "thumbnail": "https://picsum.photos/300?7",
+      "isFeatured": false
+    },
+    {
+      "id": 8,
+      "title": "Levi's Slim Fit Jeans",
+      "description": "Comfort stretch denim",
+      "price": 2499,
+      "brand": "Levi's",
+      "category": "fashion",
+      "stock": 25,
+      "thumbnail": "https://picsum.photos/300?8",
+      "isFeatured": false
+    },
+    {
+      "id": "9716",
+      "title": "Red Lipstick",
+      "description": "Comfort stretch denim",
+      "price": 2300,
+      "brand": "xyz",
+      "category": "fashion",
+      "stock": 2,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+      "isFeatured": true
+    },
+    {
+      "id": "4d56",
+      "title": "fghj",
+      "description": "hjnm",
+      "price": 234,
+      "brand": "13er",
+      "category": "laptops",
+      "stock": 23,
+      "thumbnail": "wert",
+      "isFeatured": true
     }
   ]
 }
